@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Truck.API", "Truck.API\Truck.API.csproj", "{17415EE3-1C4D-4DFA-B361-BA493EB69EB2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Truck.API", "src\Truck.API\Truck.API.csproj", "{17415EE3-1C4D-4DFA-B361-BA493EB69EB2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Truck.Core", "Truck.Core\Truck.Core.csproj", "{C80EA97F-88BB-465E-9E37-E42D2BDF8568}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Truck.Core", "src\Truck.Core\Truck.Core.csproj", "{C80EA97F-88BB-465E-9E37-E42D2BDF8568}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Truck.Infrastructure", "Truck.Infrastructure\Truck.Infrastructure.csproj", "{8A408C7C-2F4E-4E30-B00D-2955510DABF4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Truck.Infrastructure", "src\Truck.Infrastructure\Truck.Infrastructure.csproj", "{8A408C7C-2F4E-4E30-B00D-2955510DABF4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Truck.UnitTests", "..\tests\Truck.UnitTests\Truck.UnitTests.csproj", "{A5BC5EC4-70E1-4B4D-96CE-AC056F0A422F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Truck.UnitTests", "tests\Truck.UnitTests\Truck.UnitTests.csproj", "{A5BC5EC4-70E1-4B4D-96CE-AC056F0A422F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

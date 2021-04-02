@@ -12,3 +12,4 @@
 /src/Truck.Infrastructure/obj
 /tests/Truck.UnitTests/bin/Debug/net5.0
 /tests/Truck.UnitTests/obj
+/.vs/Truck.API

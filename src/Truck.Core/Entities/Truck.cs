@@ -19,7 +19,7 @@ namespace Truck.Core.Entities
             if (newTruck.ProductionYear != DateTime.Now.Year)
                 throw new ArgumentException("The production year must be the same as the current year");
 
-            if (newTruck.ModelYear != DateTime.Now.Year || newTruck.ModelYear != DateTime.Now.Year + 1)
+            if (newTruck.ModelYear != DateTime.Now.Year && newTruck.ModelYear != DateTime.Now.Year + 1)
                 throw new ArgumentException("The mode year must be the same as the current year or next year");
 
             return new Truck
