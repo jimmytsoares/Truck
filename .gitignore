@@ -1,0 +1,14 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/src/Truck.API/.vs/Truck.API
+/src/Truck.API/bin/Debug/net5.0
+/src/.vs/Truck.API
+/src/Truck.API/obj
+/src/Truck.Core/bin/Debug/net5.0
+/src/Truck.Core/obj
+/src/Truck.Infrastructure/bin/Debug/net5.0
+/src/Truck.Infrastructure/obj
+/tests/Truck.UnitTests/bin/Debug/net5.0
+/tests/Truck.UnitTests/obj
