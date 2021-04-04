@@ -1,0 +1,46 @@
+﻿@page
+@model Truck.Web.Pages.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>Truck</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="PutTruck.TruckId" />
+            <div class="form-group">
+                <label asp-for="PutTruck.Model" class="control-label"></label>
+                <select asp-for="PutTruck.Model" asp-items="Html.GetEnumSelectList<Truck.Core.Entities.TruckModel>()" class="form-control"></select>
+                <span asp-validation-for="PutTruck.Model" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Truck.ProductionYear" class="control-label"></label>
+                <input asp-for="Truck.ProductionYear" class="form-control" disabled />
+                <span asp-validation-for="Truck.ProductionYear" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PutTruck.ModelYear" class="control-label"></label>
+                <input asp-for="PutTruck.ModelYear" class="form-control" />
+                <span asp-validation-for="PutTruck.ModelYear" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

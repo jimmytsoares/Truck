@@ -1,0 +1,45 @@
+﻿@page
+@model Truck.Web.Pages.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1>Create</h1>
+
+<h4>Truck</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Truck.Model" class="control-label"></label>
+                <select asp-for="Truck.Model" asp-items="Html.GetEnumSelectList<Truck.Core.Entities.TruckModel>()" class="form-control"></select>
+                <span asp-validation-for="Truck.Model" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Truck.ProductionYear" class="control-label"></label>
+                <input asp-for="Truck.ProductionYear" class="form-control" value="@DateTime.Now.Year" disabled/>
+                <span asp-validation-for="Truck.ProductionYear" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Truck.ModelYear" class="control-label"></label>
+                <input asp-for="Truck.ModelYear" class="form-control" />
+                <span asp-validation-for="Truck.ModelYear" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

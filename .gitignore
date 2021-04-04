@@ -13,3 +13,7 @@
 /tests/Truck.UnitTests/bin/Debug/net5.0
 /tests/Truck.UnitTests/obj
 /.vs/Truck.API
+/src/Truck.Web/bin/Debug/net5.0
+/src/Truck.Web/obj
+/tests/Truck.IntegrationTests/bin/Debug/net5.0
+/tests/Truck.IntegrationTests/obj
